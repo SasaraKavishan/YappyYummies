@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Yappy Yummies</string>
+
+    <string-array name="product">
+        <item>Hill\'s Science Diet Adult Chicken and Barley</item>
+        <item>Blue Buffalo Wilderness Puppy Chicken</item>
+    </string-array>
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="182dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_dog_2" />
+
+    <TextView
+        android:id="@+id/Register2"
+        android:layout_width="404dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="144dp"
+        android:fontFamily="casual"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <EditText
+        android:id="@+id/FName"
+        android:layout_width="359dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Enter your FirstName"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#716D6D"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Register2" />
+
+    <EditText
+        android:id="@+id/LName"
+        android:layout_width="363dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Enter your LastName"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#716D6D"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FName" />
+
+    <EditText
+        android:id="@+id/REmail"
+        android:layout_width="363dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Enter your Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="#716D6D"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LName" />
+
+    <EditText
+        android:id="@+id/RPassword"
+        android:layout_width="361dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="#716D6D"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PNumber" />
+
+    <EditText
+        android:id="@+id/RAddress"
+        android:layout_width="363dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Enter your Address"
+        android:inputType="text"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="#716D6D"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/REmail" />
+
+    <Button
+        android:id="@+id/RegisterOnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FFC107"
+        android:fontFamily="casual"
+        android:onClick="registerButton"
+        android:text="Register"
+        android:textColor="#121111"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RPassword" />
+
+    <EditText
+        android:id="@+id/PNumber"
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Enter Your Phone number"
+        android:inputType="phone"
+        android:textColor="@color/white"
+        android:textColorHint="#716D6D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RAddress" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="250dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RPassword"
+        app:srcCompat="@drawable/dog23_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".User_Profile"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="12dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="137dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_dog_2" />
+
+    <TextView
+        android:id="@+id/UP"
+        android:layout_width="207dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="casual"
+        android:text="User Profile"
+        android:textAllCaps="false"
+        android:textColor="#FFC107"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/UNameUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="User Name :"
+        android:textColor="#F8F6F6"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <EditText
+        android:id="@+id/UNameUPEnter"
+        android:layout_width="217dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#ECE5AA"
+        app:layout_constraintStart_toEndOf="@+id/UNameUP"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/UAddressUP"
+        android:layout_width="102dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="casual"
+        android:text="Address :"
+        android:textColor="#FAF7F7"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UNameUP" />
+
+    <EditText
+        android:id="@+id/UAddressUPEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#ECE5AA"
+        app:layout_constraintStart_toEndOf="@+id/UAddressUP"
+        app:layout_constraintTop_toBottomOf="@+id/UNameUPEnter" />
+
+    <TextView
+        android:id="@+id/UEmailUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="casual"
+        android:text="Email :"
+        android:textColor="#FBFAFA"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UAddressUP" />
+
+    <EditText
+        android:id="@+id/UEmailUPEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#ECE5AA"
+        app:layout_constraintStart_toEndOf="@+id/UEmailUP"
+        app:layout_constraintTop_toBottomOf="@+id/UAddressUPEnter" />
+
+    <TextView
+        android:id="@+id/UPNumberUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="casual"
+        android:text="Phone Num :"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UEmailUP" />
+
+    <EditText
+        android:id="@+id/UPNumberUPEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#ECE5AA"
+        app:layout_constraintStart_toEndOf="@+id/UPNumberUP"
+        app:layout_constraintTop_toBottomOf="@+id/UEmailUPEnter" />
+
+    <Button
+        android:id="@+id/UpdateProfile"
+        android:layout_width="407dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FFC107"
+        android:fontFamily="casual"
+        android:onClick="updateProfile"
+        android:text="Update Profile"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UPNumberUPEnter" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="408dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFC107"
+        android:fontFamily="casual"
+        android:onClick="updatePaymentMethods"
+        android:text="Update Payment Method"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateProfile" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="402dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFC107"
+        android:fontFamily="casual"
+        android:onClick="logout"
+        android:text="Logout"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UP"
+        app:srcCompat="@drawable/uplogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

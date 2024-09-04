@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cartP1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="421dp"
+        android:layout_height="434dp"
+        app:cardBackgroundColor="#E7B82B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="382dp"
+            android:background="#FFC107">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="235dp"
+                android:layout_height="159dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hill_s_science_diet_adult_chicken___barley" />
+
+            <TextView
+                android:id="@+id/cartN1"
+                android:layout_width="213dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="casual"
+                android:text="Name"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/cartPrice1"
+                android:layout_width="210dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="3dp"
+                android:fontFamily="casual"
+                android:text="Price"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cartN1"
+                app:layout_constraintStart_toStartOf="@+id/cartN1"
+                app:layout_constraintTop_toBottomOf="@+id/cartN1" />
+
+            <Button
+                android:id="@+id/removeQuantity1"
+                android:layout_width="69dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cartPrice1" />
+
+            <Button
+                android:id="@+id/addQuantity1"
+                android:layout_width="69dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/Cquantity1"
+                app:layout_constraintTop_toBottomOf="@+id/cartPrice1" />
+
+            <TextView
+                android:id="@+id/Cquantity1"
+                android:layout_width="53dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/removeQuantity1"
+                app:layout_constraintTop_toBottomOf="@+id/cartPrice1" />
+
+            <Button
+                android:id="@+id/delete1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="41dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="casual"
+                android:text="Delete"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/addQuantity1"
+                app:layout_constraintTop_toBottomOf="@+id/cartPrice1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
